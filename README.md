@@ -65,7 +65,7 @@ ecoyaan-checkout/
 Each page's `layout.js` is a **Server Component** that calls `fetch('/api/cart', { cache: 'no-store' })`. The `cache: 'no-store'` directive makes this equivalent to `getServerSideProps` - data is fetched fresh on every request, server-side, before the HTML is sent to the client. The fetched data is passed into the `CheckoutProvider` as `initialCartData`.
 
 ```js
-// Server Component — runs on the server per request
+// Server Component - runs on the server per request
 async function getCartData() {
   const res = await fetch(`${baseUrl}/api/cart`, { cache: 'no-store' })
   return res.json()
@@ -167,7 +167,7 @@ vercel
 
 ## 📦 Tech Stack
 
-- **Next.js 14** — App Router, Server Components, API Routes
-- **React 18** — Client Components, Context API, Hooks
-- **Tailwind CSS** — Utility-first styling
-- **Google Fonts** — Playfair Display, DM Sans
+- **Next.js 14** - App Router, Server Components, API Routes
+- **React 18** - Client Components, Context API, Hooks
+- **Tailwind CSS** - Utility-first styling
+- **Google Fonts** - Playfair Display, DM Sans
