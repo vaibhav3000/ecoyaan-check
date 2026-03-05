@@ -18,7 +18,7 @@ A clean, responsive, multi-step checkout flow built with **Next.js 14 App Router
 | **Mock API Route** | `GET /api/cart` returns mock product data with simulated latency |
 | **3-Step Checkout** | Cart → Shipping → Payment → Success |
 | **Form Validation** | Real-time validation for email format, 10-digit phone, 6-digit PIN, required fields |
-| **State Management** | React Context API (`CheckoutContext`) — persists cart + address across all steps |
+| **State Management** | React Context API (`CheckoutContext`) - persists cart + address across all steps |
 | **Responsive Design** | Mobile-first, two-column layout on desktop |
 | **Quantity Controls** | Add/remove items, update quantities live |
 | **Animated UI** | CSS keyframe animations for step transitions, success screen confetti |
