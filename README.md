@@ -2,7 +2,7 @@
 
 A clean, responsive, multi-step checkout flow built with **Next.js 14 App Router**, **Tailwind CSS**, and **React Context API** — designed for an eco-friendly e-commerce platform.
 
----
+----
 
 ## 🚀 Live Demo
 
