@@ -1,6 +1,6 @@
-# 🌿 Ecoyaan Checkout Flow
+## 🌿 Ecoyaan Checkout Flow
 
-A clean, responsive, multi-step checkout flow built with **Next.js 14 App Router**, **Tailwind CSS**, and **React Context API** — designed for an eco-friendly e-commerce platform.
+A clean, responsive, multi-step checkout flow built with **Next.js 14 App Router**, **Tailwind CSS**, and **React Context API** - designed for an eco-friendly e-commerce platform.
 
 ----
 
@@ -62,7 +62,7 @@ ecoyaan-checkout/
 
 ### 1. Next.js App Router + Server Components for SSR
 
-Each page's `layout.js` is a **Server Component** that calls `fetch('/api/cart', { cache: 'no-store' })`. The `cache: 'no-store'` directive makes this equivalent to `getServerSideProps` — data is fetched fresh on every request, server-side, before the HTML is sent to the client. The fetched data is passed into the `CheckoutProvider` as `initialCartData`.
+Each page's `layout.js` is a **Server Component** that calls `fetch('/api/cart', { cache: 'no-store' })`. The `cache: 'no-store'` directive makes this equivalent to `getServerSideProps` - data is fetched fresh on every request, server-side, before the HTML is sent to the client. The fetched data is passed into the `CheckoutProvider` as `initialCartData`.
 
 ```js
 // Server Component — runs on the server per request
@@ -84,9 +84,9 @@ export default async function CartPage() {
 ### 2. React Context API for State
 
 `CheckoutContext` holds:
-- `cartItems` — mutable (quantity changes, removals)
-- `address` — updated by the shipping form
-- `paymentMethod` — selected method
+- `cartItems` - mutable (quantity changes, removals)
+- `address` - updated by the shipping form
+- `paymentMethod` - selected method
 - Derived values: `subtotal`, `grandTotal`, `shippingFee`
 
 The context is initialized with SSR data and stays hydrated client-side throughout the checkout flow.
@@ -112,7 +112,7 @@ Validation runs on `onBlur` (field-level) and on submit (full form). Errors are 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/ecoyaan-checkout.git
+git clone https://github.com/vaibhav3000/ecoyaan-checkout.git
 cd ecoyaan-checkout
 
 # 2. Install dependencies
